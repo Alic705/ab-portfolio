@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5D3D"/>
+      <stop offset="100%" stop-color="#FF4925"/>
+    </linearGradient>
+    <filter id="orangeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="#FF4925" stroke-width="6" stroke-opacity="0.4"/>
+
+  <!-- Modern Geometric 'AB' Monogram -->
+  <g transform="translate(66, 120)">
+    <!-- Letter 'A' (Electric Orange with glow) -->
+    <!-- Left leg of A -->
+    <path d="M 90 0 L 10 270 L 65 270 L 115 80 L 150 200 L 70 200 L 60 235 L 160 235 L 170 270 L 225 270 Z" fill="url(#orangeGrad)" filter="url(#orangeGlow)"/>
+    
+    <!-- Letter 'B' (Pure White with sleek cuts) -->
+    <path d="M 230 0 L 320 0 C 365 0, 395 25, 395 65 C 395 95, 375 118, 345 128 C 385 138, 405 165, 405 202 C 405 248, 368 270, 315 270 L 230 270 Z M 285 50 L 285 110 L 315 110 C 335 110, 345 100, 345 80 C 345 60, 335 50, 315 50 Z M 285 160 L 285 220 L 320 220 C 345 220, 355 208, 355 190 C 355 172, 345 160, 320 160 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Electric Dot Accent -->
+  <circle cx="430" cy="90" r="18" fill="#FF4925" filter="url(#orangeGlow)"/>
+</svg>
